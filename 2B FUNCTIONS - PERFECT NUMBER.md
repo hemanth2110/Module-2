@@ -2,31 +2,46 @@
 ## FUNCTIONS - PERFECT NUMBER
 
 ### AIM  
-To write a Python program to check if a number is a Perfect number using the concept of functions.
+To Write a program in python to compute whether the given number is a palindrome
 
 ---
 
 ### ALGORITHM
-
+ Reg no: 212223090002
+ Name: Deepapritha A
 1. Begin the program.  
-2. Read the number `n` from the user using `input()`.  
-3. Convert the input to an integer.  
-4. Define the function `perfectNumber(n)` with the following steps:  
-    - Initialize a variable `factor_sum` to 0.  
-    - Iterate through all numbers from 1 to `n//2` (as divisors of a number can't be greater than half of it).  
-    - If a number `i` divides `n` perfectly (i.e., `n % i == 0`), add `i` to `factor_sum`.  
-    - If `factor_sum` is equal to `n`, then print the number is a perfect number. Otherwise, print it's not a perfect number.  
-5. Terminate the program.
+2. Read the number `num` from the user using `input()`.  
+3. Copy the value of num into another variable called temp.
+4.Set a variable rev (reverse) to 0 and Repeat the following steps while temp is greater than 0
+5. Get the last digit of temp using temp % 10.
+    Multiply rev by 10 and add the last digit to it.
+    Remove the last digit from temp using integer division (temp = temp // 10).  
+     After the loop ends, compare rev with num.    
+6.If rev is equal to num, print "The number is a palindrome".
+7.Otherwise, print "The number is not a palindrome".
+8. Terminate the program.
 
 ---
 
 ### PROGRAM
+NAME : HEMANTH BABU M B
+REG.NO: 212222220015
 ```
-#Reg.No:
-#Name:
-#Add your Code Here
+num=int(input())
+rev=0
+temp=num
+while temp>0:
+    rev=(10*rev)+temp%10
+    temp//=10
+if rev==num:
+    print("The given number {} is a Palindrome".format(num))
+else:
+    print("The given number {} is not a palindrome".format(num))
 
 ```
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/c793d55f-05dc-4a83-8dce-a79d0dee3e8d)
+
 
 ### RESULT
+Thus the python program for computing whether the given number is a palindrome is executed successfully.
