@@ -1,37 +1,46 @@
 # Exp. No: 2a  
-## ITERATIVE STATEMENTS – PRINTING N NATURAL NUMBERS
+## ITERATIVE STATEMENTS –Printing 1 to n Odd numbers in reverse order.
 
 ###  Aim
-To create a Python program for printing `n` natural numbers using a `for` loop.
-
----
+To write a program that prints all odd numbers from 1 to n in reverse order (from largest to smallest).
 
 ###  Algorithm
 
-1. Begin the program.
-2. Use `input()` to read the value of `n` (the upper limit) from the user.
-3. Convert the input to an integer.
-4. Display the message **"Natural Numbers are :"**.
-5. Use a `for` loop to iterate from 1 to `n` (inclusive).
-6. In each iteration, print the current value of `i`.
-7. Terminate the program.
+1.Start
 
----
+2.Input an integer n (the upper limit).
+
+3.If n is even, subtract 1 from n to get the largest odd number less than or equal to n.
+
+4.Loop from n down to 1, decrementing by 2:
+
+5.Print the current number.
+
+6.End
 
 ### 🧾 Program
+#Reg.NO:212222220015
 
-```python
-#Reg.NO
-#Name
-#Write your Code here
+#Name: Hemanth babu M B
 
+```
+n=int(input())
+for i in range(n,0,-1):
+    if(i%2!=0):
+        print(i)
 ```
 ### OUTPUT
-```
 
-```
-### RESULT
-```
+![opmod2](https://github.com/user-attachments/assets/6800b5bc-9a1a-4a0c-a978-cf545c4290b9)
 
-```
+### RESULT 
+
+The program prints all odd numbers from 1 to n in reverse order, starting from the largest odd ≤ n down to 1.
+
+
+
+
+
+
+
 
